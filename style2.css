@@ -62,11 +62,32 @@ body {
 }
 #area {
 	background-color: lightyellow;
-	cursor: pointer;
-	flex: 1;
+	height: 60%;
 }
-#image {
-	flex: 2;
+#zoom {
+	display: fixed;
+    position: fixed;
+    right: 25%;
+    bottom: 0;
+	width: 32vh;
+}
+#BUTTONS {
+	display: flex;
+	flex-direction: column;
+	padding: 1vh;
+	font-size: 3vh;
+	height: 33%;
+	margin: auto;
+	justify-content: space-around;
+}
+.button {
+    border: 1px solid;
+    border-radius: 1vh;
+	width: 20vh;
+	height: 6vh;
+	line-height: 5.5vh;
+	text-align: center;
+    cursor: pointer;
 }
 .technology {
     font-size: 2vh;

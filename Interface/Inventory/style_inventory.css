@@ -10,45 +10,45 @@ body {
 	position: fixed;
 }
 .items_rocket {
-    font-size: 6vh;
+    font-size: 5vh;
 	color: white;
-	border: 1vh solid black;
+	border: 0.5vh solid darkslategray;
     border-radius: 1vh;
 	background-color: black;
 }
 .items_thruster {
-	font-size: 6vh;
-	border: 1vh solid black;
+	font-size: 5vh;
+	border: 0.5vh solid black;
     border-radius: 1vh;
 	background-color: skyblue;
 }
 .items_probe {
-	font-size: 6vh;
-	border: 1vh solid black;
+	font-size: 5vh;
+	border: 0.5vh solid black;
     border-radius: 1vh;
 	background-color: white;
 }
 .items_astronaut {
-	font-size: 6vh;
-	border: 1vh solid black;
+	font-size: 5vh;
+	border: 0.5vh solid black;
     border-radius: 1vh;
 	background-color: lightgreen;
 }
 .items_supply {
-	font-size: 6vh;
-	border: 1vh solid black;
+	font-size: 5vh;
+	border: 0.5vh solid black;
     border-radius: 1vh;
 	background-color: lightcoral;
 }
 .items_capsule {
-	font-size: 6vh;
-	border: 1vh solid black;
+	font-size: 5vh;
+	border: 0.5vh solid black;
     border-radius: 1vh;
 	background-color: violet;
 }
 .items_sample {
-	font-size: 6vh;
-	border: 1vh solid black;
+	font-size: 5vh;
+	border: 0.5vh solid black;
     border-radius: 1vh;
 	background-color: dimgray;
 }

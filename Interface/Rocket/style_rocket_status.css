@@ -10,8 +10,8 @@ body {
 	position: fixed;
 }
 .rocket_name {
-    font-size: 6vh;
-	border: 1vh solid black;
+    font-size: 5vh;
+	border: 0.5vh solid black;
     border-radius: 1vh;
 }
 .components {
