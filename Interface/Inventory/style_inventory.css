@@ -15,40 +15,47 @@ body {
 	border: 0.5vh solid darkslategray;
     border-radius: 1vh;
 	background-color: black;
+    text-align: center;
 }
 .items_thruster {
 	font-size: 5vh;
 	border: 0.5vh solid black;
     border-radius: 1vh;
 	background-color: skyblue;
+    text-align: center;
 }
 .items_probe {
 	font-size: 5vh;
 	border: 0.5vh solid black;
     border-radius: 1vh;
 	background-color: white;
+    text-align: center;
 }
 .items_astronaut {
 	font-size: 5vh;
 	border: 0.5vh solid black;
     border-radius: 1vh;
 	background-color: lightgreen;
+    text-align: center;
 }
 .items_supply {
 	font-size: 5vh;
 	border: 0.5vh solid black;
     border-radius: 1vh;
 	background-color: lightcoral;
+    text-align: center;
 }
 .items_capsule {
 	font-size: 5vh;
 	border: 0.5vh solid black;
     border-radius: 1vh;
 	background-color: violet;
+    text-align: center;
 }
 .items_sample {
 	font-size: 5vh;
 	border: 0.5vh solid black;
     border-radius: 1vh;
 	background-color: dimgray;
+    text-align: center;
 }

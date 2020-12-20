@@ -2,7 +2,7 @@ body {
 	display: flex;
 	margin: 0;
 }
-#technologyarea {
+#area {
 	background-color: lightyellow;
 	cursor: pointer;
 	width: 50%;
@@ -10,7 +10,8 @@ body {
 	position: fixed;
 }
 .technology {
-    font-size: 6vh;
-	border: 1vh solid black;
+    font-size: 5vh;
+	border: 0.5vh solid black;
     border-radius: 1vh;
+    text-align: center;
 }

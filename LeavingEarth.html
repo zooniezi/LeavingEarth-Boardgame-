@@ -29,32 +29,25 @@
 			<img id = "zoom" src = "Interface/Map/Images/Earth.jpg">
         </div>
         <div id = "status">
-			<!--iframe id ="area" src = "Interface/Technology/technologies.html" frameBorder = "0">
-
-			</iframe>-->
-			<!--iframe id ="area" src = "Interface/Rocket/rocket_status.html" frameBorder = "0">
-
-			</iframe>-->
-            <!--iframe id ="area" src = "Interface/Inventory/inventory.html" frameBorder = "0">
-
-			</iframe>-->
-            <iframe id ="area" src = "Interface/Mission/mission.html" frameBorder = "0">
-
-			</iframe>
+			<!--img id = "mainpage" src = "Interface/Main/backpage.jpeg"-->
+			<iframe id ="area" frameBorder = "0">
+			
+            </iframe>
+            
 			<div id = "BUTTONS">
-				<div class = "button">
+				<div class = "button" name = "archive" onclick = "popUp('Archive/archive')">
 					Archive
 				</div>
-				<div class = "button">
+				<div class = "button" name = "Inventory" onclick = "popUp('Inventory/inventory')">
 					Inventory
 				</div>
-				<div class = "button">
+				<div class = "button" name = "Mission" onclick = "popUp('Mission/mission')">
 					Missions
 				</div>
-				<div class = "button">
+				<div class = "button" name = "Rocket" onclick = "popUp('Rocket/rocket_status')">
 					Rockets
 				</div>
-				<div class = "button">
+				<div class = "button" name = "Technology" onclick = "popUp('Technology/technologies')">
 					Technology
 				</div>
 			</div>

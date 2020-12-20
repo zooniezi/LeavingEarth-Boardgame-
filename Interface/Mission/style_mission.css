@@ -7,12 +7,14 @@ body {
 	border: 0.5vh solid black;
     border-radius: 1vh;
 	background-color: lightgreen;
+    text-align: center;
 }
 .medium {
 	font-size: 5vh;
 	border: 0.5vh solid black;
     border-radius: 1vh;
-	background-color: gold; 
+	background-color: gold;
+    text-align: center;
 }
 .hard {
 	font-size: 5vh;
@@ -20,6 +22,7 @@ body {
 	border: 0.5vh solid black;
     border-radius: 1vh;
 	background-color: orangered;
+    text-align: center;
 }
 .outer_planets {
 	font-size: 5vh;
@@ -27,4 +30,5 @@ body {
 	border: 0.5vh solid black;
     border-radius: 1vh;
 	background-color: darkblue;
+    text-align: center;
 }
