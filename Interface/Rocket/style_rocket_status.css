@@ -1,0 +1,19 @@
+body {
+	display: flex;
+	margin: 0;
+}
+#area {
+	background-color: lightyellow;
+	cursor: pointer;
+	width: 50%;
+	height: 30%;
+	position: fixed;
+}
+.rocket_name {
+    font-size: 6vh;
+	border: 1vh solid black;
+    border-radius: 1vh;
+}
+.components {
+	
+}

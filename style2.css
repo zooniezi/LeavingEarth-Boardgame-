@@ -1,0 +1,87 @@
+body {
+	display: flex;
+	margin: 0;
+}
+#main {
+	flex: 3;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+#header {
+	flex : 1;
+	background-color: black;
+	color: white;
+	font-size: 6.5vh;
+	text-align: center;
+	line-height: 10vh;
+	cursor: pointer;
+	display: flex;
+}
+#title {
+	flex: 4;
+    float: left;
+}
+#timeandmoney {
+    display: flex;
+	flex: 1;
+    float: right;
+}
+#timeline {
+	background-color: yellowgreen;
+	flex: 1;
+	width: 5vh;
+	text-align: center;
+	font-size: 3vh;
+    float: right;
+}
+#moneyleft {
+	background-color: blueviolet;
+	flex: 1;
+	text-align: center;
+	font-size: 3vh;
+	float: right;
+}
+#map {
+    flex: 9;
+    background-color: gray;
+    display: flex;
+}
+#board {
+	flex : 9;
+	background-color: gray;
+	display: flex;
+	justify-content: center;
+}
+#status {
+    flex: 1;
+    display : flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: orangered;
+}
+#area {
+	background-color: lightyellow;
+	cursor: pointer;
+	flex: 1;
+}
+#image {
+	flex: 2;
+}
+.technology {
+    font-size: 2vh;
+}
+.column {
+	width: 9%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.tile {
+	height: 15%;
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+

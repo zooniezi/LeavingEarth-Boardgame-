@@ -1,0 +1,37 @@
+body {
+	display: flex;
+	margin: 0;
+}
+#area {
+	background-color: lightyellow;
+	cursor: pointer;
+	width: 50%;
+	height: 30%;
+	position: fixed;
+}
+.easy {
+    font-size: 6vh;
+	border: 1vh solid black;
+    border-radius: 1vh;
+	background-color: lightgreen;
+}
+.medium {
+	font-size: 6vh;
+	border: 1vh solid black;
+    border-radius: 1vh;
+	background-color: gold; 
+}
+.hard {
+	font-size: 6vh;
+	color: white;
+	border: 1vh solid black;
+    border-radius: 1vh;
+	background-color: orangered;
+}
+.outer_planets {
+	font-size: 6vh;
+	color: white;
+	border: 1vh solid black;
+    border-radius: 1vh;
+	background-color: darkblue;
+}
