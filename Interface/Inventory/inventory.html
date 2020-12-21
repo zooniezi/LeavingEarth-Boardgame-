@@ -6,30 +6,116 @@
 	</head>
 	<body>
 		<div class = "area"> 
-				<div class = "items_rocket">
-					Juno Rockets
-				</div>	
-				<div class = "items_rocket">
-					Saturn Rocket
-				</div>
-                <div class = "items_probe">
-					Probe
-                </div>
-                <div class = "items_thruster">
-					Ion Thrusters
-                </div>
-                <div class = "items_astronaut">
-					Buz Aldrin
-                </div>
-                <div class = "items_supply">
-					Supplies
-                </div>
-                <div class = "items_capsule">
-					Eagle
-                </div>
-                <div class = "items_sample">
-					Moon Sample
-                </div>
+			<div class = "items_rocket" onclick = "tabmenu('rocketpage')">
+				Rockets and Thrusters
+			</div>	
+			<div class = "items_capsule" onclick = "tabmenu('capsulepage')">
+				Capsules
+			</div>
+			<div class = "items_astronaut" onclick = "tabmenu('Astronautandsupplypage')">
+				Astronauts and Supplies
+			</div>
+			<div class = "items_supply" onclick = "tabmenu('Samplepage')">
+				Samples
+			</div>
 		</div>
-	</body>	
+		<div>
+			<div class = "tab" id = "rocketpage">
+				<div id = "Juno">
+					Juno : 0
+				</div>
+				<div id = "Atlas">
+					Atlas : 0
+				</div>
+				<div id = "Soyuz">
+					Soyuz : 0
+				</div>
+				<div id = "Saturn">
+					Saturn : 0
+				</div>
+				<div id = "Proton">
+					Proton : 0
+				</div>
+				<div id = "Ion Thruster">
+					Ion Thruster : 0
+				</div>
+			</div>
+			<div class = "tab" id = "capsulepage">
+				<div id = "Vostok">
+					Vostok : 0
+				</div>
+				<div id = "Apollo">
+					Apollo : 0
+				</div>
+				<div id = "Eagle">
+					Eagle : 0
+				</div>
+				<div id = "Probe">
+					Probe : 0
+				</div>
+				<div id = "Explorer">
+					Explorer : 0
+				</div>
+				<div id = "Galileo">
+					Galileo : 0
+				</div>       
+				<div id = "Aldrin">
+					Aldrin : 0
+				</div>
+			</div>
+			<div class = "tab" id = "Astronautandsupplypage">
+				<div id = "Engineer">
+					Engineer : 0
+				</div>
+				<div id = "Doctor">
+					Doctor : 0
+				</div>
+				<div id = "Scientist">
+					Scientist : 0
+				</div>
+				<div id = "Supply">
+					Supply : 0
+				</div>
+			</div>
+			<div class = "tab" id = "Samplepage">
+				<div id = "Moonsample">
+					Moon Sample : 0
+				</div>
+				<div id = "Mercurysample">
+					Mercury Sample : 0
+				</div>
+				<div id = "Venussample">
+					Venus Sample : 0
+				</div>
+				<div id = "Marssample">
+					Mars Sample : 0
+				</div>
+				<div id = "Phobossample">
+					Phobos Samle : 0
+				</div>
+				<div id = "Ceressample">
+					Ceres Sample : 0
+				</div>
+				<div id = "Ganymedesample">
+					Gantmede Sample : 0
+				</div>
+				<div id = "Calistosample">
+					Calisto Sample : 0
+				</div>
+				<div id = "Europasample">
+					Europa Sample : 0
+				</div>
+				<div id = "Iosample">
+				    Io Sample : 0
+				</div>
+				<div id = "Titansample">
+					Titan Sample : 0
+				</div>
+				<div id = "Enceladussample">
+					Enceladus Sample : 0
+				</div>
+			</div>
+		</div>
+		<script src = "inventory.js"></script>
+	</body>
 </html>

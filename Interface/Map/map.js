@@ -10,13 +10,11 @@ function accessByClass(class_code) {
 	return document.getElementsByClassName(class_code)
 }
 
-function boost(thrust, mass, difficulty) {
-	if(mass * difficulty <= thrust) {
-        return true
-    }
-    return false
+function zooming(address){
+	var target = parent.document.getElementById("zoom") //zoom은 돋보기 이미지
+    var temp = document.getElementsByClassName("tile")[address].children[0]
+	target.src = temp.src
 }
-
 
 function popUp(target) {
     var temp = accessById("area")
