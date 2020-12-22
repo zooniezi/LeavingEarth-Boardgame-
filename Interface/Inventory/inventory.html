@@ -19,102 +19,145 @@
 				Samples
 			</div>
 		</div>
+		<!--tabpagecode-->
 		<div>
 			<div class = "tab" id = "rocketpage">
-				<div id = "Juno">
+				<div class = "item" id = "Juno" onclick = "buy(0, 1)">
 					Juno : 0
 				</div>
-				<div id = "Atlas">
+				<div class = "item" id = "Atlas" onclick = "buy(1, 5)">
 					Atlas : 0
 				</div>
-				<div id = "Soyuz">
+				<div class = "item" id = "Soyuz" onclick = "buy(2, 8)">
 					Soyuz : 0
 				</div>
-				<div id = "Saturn">
+				<div class = "item" id = "Saturn"  onclick = "buy(3, 15)">
 					Saturn : 0
 				</div>
-				<div id = "Proton">
+				<div class = "item" id = "Proton" onclick = "buy(4, 12)">
 					Proton : 0
 				</div>
-				<div id = "Ion Thruster">
+				<div class = "item" id = "Ion Thruster" onclick = "buy(5, 10)">
 					Ion Thruster : 0
 				</div>
 			</div>
 			<div class = "tab" id = "capsulepage">
-				<div id = "Vostok">
+				<div class = "item" id = "Vostok" onclick = "buy(6, 2)">
 					Vostok : 0
 				</div>
-				<div id = "Apollo">
+				<div class = "item" id = "Apollo" onclick = "buy(7, 4)">
 					Apollo : 0
 				</div>
-				<div id = "Eagle">
+				<div class = "item" id = "Eagle" onclick = "buy(8, 4)">
 					Eagle : 0
 				</div>
-				<div id = "Probe">
+				<div class = "item" id = "Probe" onclick = "buy(9, 2)">
 					Probe : 0
 				</div>
-				<div id = "Explorer">
+				<div class = "item" id = "Explorer" onclick = "buy(10, 3)">
 					Explorer : 0
 				</div>
-				<div id = "Galileo">
+				<div class = "item" id = "Galileo" onclick = "buy(11, 5)">
 					Galileo : 0
 				</div>       
-				<div id = "Aldrin">
+				<div class = "item" id = "Aldrin" onclick = "buy(12, 4)">
 					Aldrin : 0
 				</div>
 			</div>
 			<div class = "tab" id = "Astronautandsupplypage">
-				<div id = "Engineer">
+				<div class = "item" id = "Pilot" onclick = "buy(13, 5)">
+					Pilot : 0
+				</div>
+				<div class = "item" id = "Engineer" onclick = "buy(14, 5)">
 					Engineer : 0
 				</div>
-				<div id = "Doctor">
+				<div class = "item" id = "Doctor" onclick = "buy(15, 5)">
 					Doctor : 0
 				</div>
-				<div id = "Scientist">
+				<div class = "item" id = "Scientist" onclick = "buy(16, 5)">
 					Scientist : 0
 				</div>
-				<div id = "Supply">
+				<div class = "item" id = "Supply" onclick = "buy(17, 1)">
 					Supply : 0
 				</div>
 			</div>
 			<div class = "tab" id = "Samplepage">
-				<div id = "Moonsample">
+				<div class = "item" id = "Moonsample">
 					Moon Sample : 0
 				</div>
-				<div id = "Mercurysample">
+				<div class = "item" id = "Mercurysample">
 					Mercury Sample : 0
 				</div>
-				<div id = "Venussample">
+				<div class = "item" id = "Venussample">
 					Venus Sample : 0
 				</div>
-				<div id = "Marssample">
+				<div class = "item" id = "Marssample">
 					Mars Sample : 0
 				</div>
-				<div id = "Phobossample">
+				<div class = "item" id = "Phobossample">
 					Phobos Samle : 0
 				</div>
-				<div id = "Ceressample">
+				<div class = "item" id = "Ceressample">
 					Ceres Sample : 0
 				</div>
-				<div id = "Ganymedesample">
+				<div class = "item" id = "Ganymedesample">
 					Gantmede Sample : 0
 				</div>
-				<div id = "Calistosample">
+				<div class = "item" id = "Calistosample">
 					Calisto Sample : 0
 				</div>
-				<div id = "Europasample">
+				<div class = "item" id = "Europasample">
 					Europa Sample : 0
 				</div>
-				<div id = "Iosample">
+				<div class = "item" id = "Iosample">
 				    Io Sample : 0
 				</div>
-				<div id = "Titansample">
+				<div class = "item" id = "Titansample">
 					Titan Sample : 0
 				</div>
-				<div id = "Enceladussample">
+				<div class = "item" id = "Enceladussample">
 					Enceladus Sample : 0
 				</div>
 			</div>
+			<div class = "buyoption">
+				<input type="radio" name="option"  style="width:3vh;height:3vh;border:1vh; cursor: pointer;" value="BUY" checked = "checked">
+				<div class = "text">
+					BUY
+				</div>
+			</div>
+			<div class = "rocketoption">
+				<input type="radio" name="option" style="width:3vh;height:3vh;border:1vh;cursor: pointer;" value="ALPHA">
+                <div class = "text">
+                    ALPHA
+                </div>
+			</div>
+			<div class = "rocketoption">
+				<input type="radio" name="option" style="width:3vh;height:3vh;border:1vh;cursor: pointer;" value="BETA">
+				<div class = "text">
+					BETA
+				</div>
+			</div>
+			<div class = "rocketoption">
+				<input type="radio" name="option" style="width:3vh;height:3vh;border:1vh;cursor: pointer;" value="GAMMA">
+                <div class = "text">
+                    GAMMA
+                </div>
+			</div>
+			<div class = "rocketoption">
+				<input type="radio" name="option" style="width:3vh;height:3vh;border:1vh;cursor: pointer;" value="DELTA">
+                <div class = "text">
+                    DELTA
+				</div>
+			</div>
+			<div class = "rocketoption">
+				<input type="radio" name="option" style="width:3vh;height:3vh;border:1vh;cursor: pointer;" value="EPSILON">
+                <div class = "text">
+                    EPSILON
+                </div>
+			</div>
+				
+			
+			
 		</div>
 		<script src = "inventory.js"></script>
 	</body>

@@ -12,10 +12,10 @@ body {
 }
 .items_rocket {
     font-size: 5vh;
-	color: white;
-	border: 0.5vh solid darkslategray;
+	color: black;
+	border: 0.5vh solid black;
     border-radius: 1vh;
-	background-color: black;
+	background-color: lightcoral;
     text-align: center;
 	cursor: pointer;
 }
@@ -47,7 +47,7 @@ body {
 	font-size: 5vh;
 	border: 0.5vh solid black;
     border-radius: 1vh;
-	background-color: lightcoral;
+	background-color: skyblue;
     text-align: center;
 	cursor: pointer;
 }
@@ -55,7 +55,7 @@ body {
 	font-size: 5vh;
 	border: 0.5vh solid black;
     border-radius: 1vh;
-	background-color: violet;
+	background-color: khaki;
     text-align: center;
 	cursor: pointer;
 }
@@ -73,4 +73,26 @@ body {
 	border-radius: 1vh;
 	text-align: center;
 	cursor: pointer;
+}
+.buyoption {
+	display : flex;
+	flex-direction: row;
+	font-size : 5vh;
+	border: 0.3vh solid black;
+    border-radius: 1vh;
+	cursor : pointer;
+	padding: 0.5vh;
+}
+.rocketoption {
+	display : flex;
+	flex-direction: row;
+	font-size: 3vh;
+	border: 0.3vh solid black;
+	border-radius: 1vh;
+	cursor: pointer;
+	padding: 0.5vh;
+}
+.text {
+	text-align: center;
+	font-size: 3vh;
 }

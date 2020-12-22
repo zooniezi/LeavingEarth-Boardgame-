@@ -18,6 +18,7 @@ var aldrin = 0
 //supply data
 var supplies = 0
 //astronaut data
+var pilot = 0
 var engineer = 0
 var doctor = 0
 var scientist = 0
@@ -34,14 +35,36 @@ var europaSample = 0
 var ioSample = 0
 var titanSample = 0
 var enceladusSample = 0
+var itemarray = [0,0,0,0,0,0,0,0,0,0,
+                 0,0,0,0,0,0,0,0,0,0,
+                 0,0,0,0,0,0,0,0,0,0,
+                 0]
 
 function tabmenu(id) {
-	console.log("hi")
 	var temp = document.getElementsByClassName("tab")
 	for(var i = 0; i<temp.length; i++){
 		temp[i].setAttribute("style","display: none")
 	}
 	document.getElementById(id).setAttribute("style","")
+}
+/*function debuging() {
+	var temp = document.getElementsByClassName("item")[1]
+	console.log(temp.id)
+}*/
+function buy(item_num, item_price) {
+    var dollar = parent.document.getElementById("moneyleft")
+	var money_left = dollar.innerText.substr(1,2) * 1
+	if(document.getElementsByName("option")[0].checked){	//buy 라디오 버튼 체크여부
+			if(money_left-item_price>=0){	//현재 잔고로 구매가능여부 확인
+				dollar.innerText = "$" + (money_left - item_price)
+				itemarray[item_num] = itemarray[item_num]+1
+			}
+            else{
+                alert("Not enough budget!")
+            }
+	}
+    var temp = document.getElementsByClassName("item")[item_num]
+    temp.innerText = temp.id + " : " + itemarray[item_num]
 }
 
 function update() { //화면 갱신
