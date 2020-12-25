@@ -1,5 +1,6 @@
 body {
 	display: flex;
+	flex-direction: column;
 	margin: 0;
 }
 #area {
@@ -10,7 +11,7 @@ body {
 	position: fixed;
 }
 .rocket_name {
-    font-size: 5vh;
+	font-size: 5vh;
 	border: 0.5vh solid black;
     border-radius: 1vh;
 }

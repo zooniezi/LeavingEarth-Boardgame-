@@ -29,28 +29,32 @@
             <iframe id = "map" src = "Interface/Map/map.html" frameBorder ="0">
 				
             </iframe>
-			<img id = "zoom" src = "Interface/Map/Images/Earth.jpg">
+			<img id = "zoom">
         </div>
         <div id = "status">
 			<!--img id = "mainpage" src = "Interface/Main/backpage.jpeg"-->
-			<iframe id ="area" frameBorder = "0">
-			
-            </iframe>
+			<div id ="area" frameBorder = "0">
+			    <iframe class = "tab" id = "pageone" src = "Interface/Archive/archive.html" frameBorder ="0" style="visibility: hidden; display: none;"></iframe>
+				<iframe class = "tab" id = "pagetwo" src = "Interface/Inventory/inventory.html" frameBorder ="0" style="visibility: hidden; display: none;"></iframe>
+				<iframe class = "tab" id = "pagethree" src = "Interface/Mission/mission.html" frameBorder ="0" style="visibility: hidden; display: none;"></iframe>
+				<iframe class = "tab" id = "pagefour" src = "Interface/Rocket/rocket_status.html" frameBorder ="0" style="visibility: hidden; display: none;"></iframe>
+				<iframe class = "tab" id = "pagefive" src = "Interface/Technology/technologies.html" frameBorder ="0" style="visibility: hidden; display: none;"></iframe>
+            </div>
             
 			<div id = "BUTTONS">
-				<div class = "button" name = "archive" onclick = "popUp('Archive/archive')">
+				<div class = "button" name = "archive" onclick = "popUp(0)">
 					Archive
 				</div>
-				<div class = "button" name = "Inventory" onclick = "popUp('Inventory/inventory')">
+				<div class = "button" name = "Inventory" onclick = "popUp(1)">
 					Inventory
 				</div>
-				<div class = "button" name = "Mission" onclick = "popUp('Mission/mission')">
+				<div class = "button" name = "Mission" onclick = "popUp(2)">
 					Missions
 				</div>
-				<div class = "button" name = "Rocket" onclick = "popUp('Rocket/rocket_status')">
+				<div class = "button" name = "Rocket" onclick = "popUp(3)">
 					Rockets
 				</div>
-				<div class = "button" name = "Technology" onclick = "popUp('Technology/technologies')">
+				<div class = "button" name = "Technology" onclick = "popUp(4)">
 					Technology
 				</div>
 			</div>

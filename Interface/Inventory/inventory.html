@@ -21,67 +21,67 @@
 		</div>
 		<!--tabpagecode-->
 		<div>
-			<div class = "tab" id = "rocketpage">
-				<div class = "item" id = "Juno" onclick = "buy(0, 1)">
+			<div class = "tab" id = "rocketpage" style = "display: none">
+				<div class = "item" id = "Juno" onclick = "buy(0, 1); mount(0);">
 					Juno : 0
 				</div>
-				<div class = "item" id = "Atlas" onclick = "buy(1, 5)">
+				<div class = "item" id = "Atlas" onclick = "buy(1, 5); mount(1);">
 					Atlas : 0
 				</div>
-				<div class = "item" id = "Soyuz" onclick = "buy(2, 8)">
+				<div class = "item" id = "Soyuz" onclick = "buy(2, 8); mount(2);">
 					Soyuz : 0
 				</div>
-				<div class = "item" id = "Saturn"  onclick = "buy(3, 15)">
+				<div class = "item" id = "Saturn"  onclick = "buy(3, 15); mount(3);">
 					Saturn : 0
 				</div>
-				<div class = "item" id = "Proton" onclick = "buy(4, 12)">
+				<div class = "item" id = "Proton" onclick = "buy(4, 12); mount(4);">
 					Proton : 0
 				</div>
-				<div class = "item" id = "Ion Thruster" onclick = "buy(5, 10)">
+				<div class = "item" id = "Ion Thruster" onclick = "buy(5, 10); mount(5);">
 					Ion Thruster : 0
 				</div>
 			</div>
-			<div class = "tab" id = "capsulepage">
-				<div class = "item" id = "Vostok" onclick = "buy(6, 2)">
+			<div class = "tab" id = "capsulepage" style = "display: none">
+				<div class = "item" id = "Vostok" onclick = "buy(6, 2); mount(6);">
 					Vostok : 0
 				</div>
-				<div class = "item" id = "Apollo" onclick = "buy(7, 4)">
+				<div class = "item" id = "Apollo" onclick = "buy(7, 4); mount(7);">
 					Apollo : 0
 				</div>
-				<div class = "item" id = "Eagle" onclick = "buy(8, 4)">
+				<div class = "item" id = "Eagle" onclick = "buy(8, 4); mount(8);">
 					Eagle : 0
 				</div>
-				<div class = "item" id = "Probe" onclick = "buy(9, 2)">
+				<div class = "item" id = "Probe" onclick = "buy(9, 2); mount(9);">
 					Probe : 0
 				</div>
-				<div class = "item" id = "Explorer" onclick = "buy(10, 3)">
+				<div class = "item" id = "Explorer" onclick = "buy(10, 3); mount(10);">
 					Explorer : 0
 				</div>
-				<div class = "item" id = "Galileo" onclick = "buy(11, 5)">
+				<div class = "item" id = "Galileo" onclick = "buy(11, 5); mount(11);">
 					Galileo : 0
 				</div>       
-				<div class = "item" id = "Aldrin" onclick = "buy(12, 4)">
+				<div class = "item" id = "Aldrin" onclick = "buy(12, 4); mount(12);">
 					Aldrin : 0
 				</div>
 			</div>
-			<div class = "tab" id = "Astronautandsupplypage">
-				<div class = "item" id = "Pilot" onclick = "buy(13, 5)">
+			<div class = "tab" id = "Astronautandsupplypage" style = "display: none">
+				<div class = "item" id = "Pilot" onclick = "buy(13, 5); mount(13);">
 					Pilot : 0
 				</div>
-				<div class = "item" id = "Engineer" onclick = "buy(14, 5)">
+				<div class = "item" id = "Engineer" onclick = "buy(14, 5); mount(14);">
 					Engineer : 0
 				</div>
-				<div class = "item" id = "Doctor" onclick = "buy(15, 5)">
+				<div class = "item" id = "Doctor" onclick = "buy(15, 5); mount(15);">
 					Doctor : 0
 				</div>
-				<div class = "item" id = "Scientist" onclick = "buy(16, 5)">
+				<div class = "item" id = "Scientist" onclick = "buy(16, 5); mount(16);">
 					Scientist : 0
 				</div>
-				<div class = "item" id = "Supply" onclick = "buy(17, 1)">
+				<div class = "item" id = "Supply" onclick = "buy(17, 1); mount(17);">
 					Supply : 0
 				</div>
 			</div>
-			<div class = "tab" id = "Samplepage">
+			<div class = "tab" id = "Samplepage" style = "display: none">
 				<div class = "item" id = "Moonsample">
 					Moon Sample : 0
 				</div>
@@ -155,9 +155,6 @@
                     EPSILON
                 </div>
 			</div>
-				
-			
-			
 		</div>
 		<script src = "inventory.js"></script>
 	</body>

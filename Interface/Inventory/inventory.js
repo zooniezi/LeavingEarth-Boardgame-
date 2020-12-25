@@ -67,14 +67,57 @@ function buy(item_num, item_price) {
     temp.innerText = temp.id + " : " + itemarray[item_num]
 }
 
+function rocketPage() {
+	var answer = parent.document.getElementsByClassName("tab")[3].contentDocument
+	return answer
+}
+
 function update() { //화면 갱신
-	;
+	
 }
 
 function popUpPage(kind) { //태그에 맞는 페이지 불러오기
-    ;
+    
 }
 
-function mount(target) { //인벤토리의 내용물을 로켓에 탑재하는 함수
-    ;
+function mount(temCode) { //인벤토리의 내용물을 로켓에 탑재하는 함수
+    var rocket
+	for(var i = 0; i<6; i++){
+		if(document.getElementsByName("option")[i].checked){
+			rocket = (i-1)  //로켓 인덱스 받아옴 (성공적임)//
+		}
+	}
+    
+    if(rocket == -1)
+    {return} //buy 옵션일 때는 작동하지 않음
+    
+	if(itemarray[temCode] <= 0) {
+        alert("You have none of this")
+        return
+    } // mount하려는 아이템이 0개일때
+    
+    //about inventory.html
+	itemarray[temCode] = itemarray[temCode]-1
+	var temp = document.getElementsByClassName("item")[temCode]
+	temp.innerText = temp.id + " : " + itemarray[temCode]	// inventory 페이지 내용 최신화
+    var page = rocketPage()
+    
+	//about rocket_status.html
+	var itemname = page.getElementsByClassName("components")[temCode+(rocket*19)]
+	var amount = page.getElementsByClassName("amount")[temCode+(rocket*19)]
+    itemname.style.display = "inline"
+	itemname.style.visibility = "visible"
+    amount.style.display = "inline-block"
+	amount.style.visibility = "visible" //아이템이 들어가면 보이게 해줌
+    amount.innerText = (amount.innerText * 1)+1//로켓 페이지 내용 수정
+}
+
+function debug() {
+	var rocket
+	for(var i = 1; i<6; i++){
+		if(document.getElementsByName("option")[i].checked){
+			rocket = (i-1)
+		}
+	}
+	console.log(rocket)
 }

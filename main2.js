@@ -18,7 +18,12 @@ function boost(thrust, mass, difficulty) {
 }
 
 
-function popUp(target) {
-    var temp = accessById("area")
-    temp.src = "Interface/" + target + ".html"
+function popUp(tabCode) {
+    var temp = accessByClass("tab")
+    for(var i = 0; i < 5; ++i) {
+        temp[i].style.display = "none"
+        temp[i].style.visibility = "hidden"
+    }
+    temp[tabCode].style.display = "block"
+    temp[tabCode].style.visibility = "visible"
 }
