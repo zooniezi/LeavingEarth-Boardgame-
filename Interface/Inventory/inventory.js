@@ -37,9 +37,57 @@ var titanSample = 0
 var enceladusSample = 0
 var itemarray = [0,0,0,0,0,0,0,0,0,0,
                  0,0,0,0,0,0,0,0,0,0,
-                 0,0,0,0,0,0,0,0,0,0,
-                 0]
+                 0,0,0,0,0,0,0,0,0,0]
+var itemindex = [
+"juno.png",
+"atlas.png",
+"soyuz.png",
+"saturn.png",
+"Proton.png",
+"ionthruster.png",
+"vostok.png",
+"apollo.png",
+"eagle.png",
+"probe.png",
+"Explorer.png",
+"Galileo.png",
+"aldrin.png",
+"Pilot.png",
+"Engineer.png",
+"Doctor.png",
+"Scientist.png",
+"supply.png",
+"moonsample.png",
+"mercurysample.png",
+"venussample.png",
+"marssample.png",
+"phobossample.png",
+"ceressample.png",
+"GanymedeSample.png",
+"CalistoSample.png",
+"EuropaSample.png",
+"IoSample.png",
+"TitanSample.png",
+"EnceladusSample.png"
+]
 
+function noRocketMultiCheck(chk) {
+	
+	var objnum = document.getElementsByName("option")
+	for(var i = 1; i<objnum.length; i++){
+		if(i==chk){
+			continue
+		}
+		objnum[i].checked = false
+	}
+	
+	
+}
+function update () {
+	for(var i = 0; i<itemarray.length; i++){
+		itemarray[i] = (document.getElementsByClassName("item")[i].innerText.split(" : ")[1])*1
+	}
+}
 function tabmenu(id) {
 	var temp = document.getElementsByClassName("tab")
 	for(var i = 0; i<temp.length; i++){
@@ -47,11 +95,9 @@ function tabmenu(id) {
 	}
 	document.getElementById(id).setAttribute("style","")
 }
-/*function debuging() {
-	var temp = document.getElementsByClassName("item")[1]
-	console.log(temp.id)
-}*/
+
 function buy(item_num, item_price) {
+	update()
     var dollar = parent.document.getElementById("moneyleft")
 	var money_left = dollar.innerText.substr(1,2) * 1
 	if(document.getElementsByName("option")[0].checked){	//buy 라디오 버튼 체크여부
@@ -68,20 +114,19 @@ function buy(item_num, item_price) {
 }
 
 function rocketPage() {
+	
 	var answer = parent.document.getElementsByClassName("tab")[3].contentDocument
 	return answer
 }
 
-function update() { //화면 갱신
-	
-}
 
 function popUpPage(kind) { //태그에 맞는 페이지 불러오기
     
 }
 
 function mount(temCode) { //인벤토리의 내용물을 로켓에 탑재하는 함수
-    var rocket
+	update()
+	var rocket
 	for(var i = 0; i<6; i++){
 		if(document.getElementsByName("option")[i].checked){
 			rocket = (i-1)  //로켓 인덱스 받아옴 (성공적임)//
@@ -112,12 +157,18 @@ function mount(temCode) { //인벤토리의 내용물을 로켓에 탑재하는 
     amount.innerText = (amount.innerText * 1)+1//로켓 페이지 내용 수정
 }
 
+function toolTip(index) {
+	 var target = parent.document.getElementById("toolTip")
+	 target.src = "Interface/ItemImage/" + itemindex[index]
+}
+
+function toolTipOut() {
+	var target = parent.document.getElementById("toolTip")
+	target.src = ""
+} 
+
 function debug() {
-	var rocket
-	for(var i = 1; i<6; i++){
-		if(document.getElementsByName("option")[i].checked){
-			rocket = (i-1)
-		}
+	for(var i = 0; i<itemarray.length; i++){
+	console.log(document.getElementsByClassName("item")[i].innerText)
 	}
-	console.log(rocket)
 }

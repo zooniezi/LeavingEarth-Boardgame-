@@ -78,6 +78,13 @@ body {
 .tab {
 	flex: 1;
 }
+#toolTip {
+	display: fixed;
+	position: fixed;
+	right: 25%;
+	bottom: 66.7vh;
+	width: 15vh;
+}
 #zoom {
 	display: fixed;
     position: fixed;
