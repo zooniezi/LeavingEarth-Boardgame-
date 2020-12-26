@@ -12,6 +12,7 @@ body {
 }
 .items_rocket {
     font-size: 5vh;
+	font-weight: bold;
 	color: black;
 	border: 0.5vh solid black;
     border-radius: 1vh;
@@ -37,6 +38,7 @@ body {
 }
 .items_astronaut {
 	font-size: 5vh;
+	font-weight: bold;
 	border: 0.5vh solid black;
     border-radius: 1vh;
 	background-color: lightgreen;
@@ -45,6 +47,7 @@ body {
 }
 .items_supply {
 	font-size: 5vh;
+	font-weight: bold;
 	border: 0.5vh solid black;
     border-radius: 1vh;
 	background-color: skyblue;
@@ -53,6 +56,7 @@ body {
 }
 .items_capsule {
 	font-size: 5vh;
+	font-weight: bold;
 	border: 0.5vh solid black;
     border-radius: 1vh;
 	background-color: khaki;

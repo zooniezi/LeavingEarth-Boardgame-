@@ -9,11 +9,34 @@ body {
 	width: 50%;
 	height: 30%;
 	position: fixed;
+	
+}
+.buyoption {
+	border: 0.3vh solid black;
+	border-radius: 1vh;
+	display: flex;
+	flex-direction: row;
+	padding: 0.5vh;
+}
+.researchimg {
+	width: 6.5vh;
+	height: 6.5vh;
+	float: left;
 }
 .technology {
-    font-size: 5vh;
+	font-size: 5vh;
 	border: 0.5vh solid black;
     border-radius: 1vh;
     text-align: center;
 	font-weight: bold;
+	cursor : pointer;
+}
+.techname {
+	margin: 0 auto;
+}
+.tab {
+	width: 100%;
+}
+.techimage {
+	width: 70vh;
 }
