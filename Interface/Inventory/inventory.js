@@ -74,7 +74,7 @@ var itemindex = [
 function noRocketMultiCheck(chk) {
 	
 	var objnum = document.getElementsByName("option")
-	for(var i = 1; i<objnum.length; i++){
+	for(var i = 0; i<objnum.length; i++){
 		if(i==chk){
 			continue
 		}
@@ -125,8 +125,9 @@ function popUpPage(kind) { //태그에 맞는 페이지 불러오기
 }
 
 function mount(temCode) { //인벤토리의 내용물을 로켓에 탑재하는 함수
+	
 	update()
-	var rocket
+	var rocket = -1
 	for(var i = 0; i<6; i++){
 		if(document.getElementsByName("option")[i].checked){
 			rocket = (i-1)  //로켓 인덱스 받아옴 (성공적임)//
@@ -134,7 +135,7 @@ function mount(temCode) { //인벤토리의 내용물을 로켓에 탑재하는 
 	}
     
     if(rocket == -1)
-    {return} //buy 옵션일 때는 작동하지 않음
+    {return} //buy 옵션일 때, 어떤 버튼도 선택되지 않은 경우에는 작동하지 않음
     
 	if(itemarray[temCode] <= 0) {
         alert("You have none of this")

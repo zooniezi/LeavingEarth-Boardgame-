@@ -1,5 +1,6 @@
 body {
 	display: flex;
+	flex-direction: column;
 	margin: 0;
 }
 #area {
@@ -14,4 +15,5 @@ body {
 	border: 0.5vh solid black;
     border-radius: 1vh;
     text-align: center;
+	font-weight: bold;
 }

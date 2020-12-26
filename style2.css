@@ -82,7 +82,7 @@ body {
 	display: fixed;
 	position: fixed;
 	right: 25%;
-	bottom: 66.7vh;
+	top: 19%;
 	width: 15vh;
 }
 #zoom {
