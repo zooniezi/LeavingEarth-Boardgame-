@@ -23,6 +23,11 @@ body {
 	height: 6.5vh;
 	float: left;
 }
+.outcomeimg {
+	width: 6.5vh;
+	height: 6.5vh;
+	float: right;
+}
 .technology {
 	font-size: 5vh;
 	border: 0.5vh solid black;

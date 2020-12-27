@@ -6,16 +6,22 @@
 	</head>
 	<body>
 		<div class = "area">
-				<div class = "technology" style = "background-color: lightcoral;" onmouseover = "tabmenu('Juno')" onmouseout = "tabout()" onclick = "buy(0)">
+				<div class = "technology" style = "background-color: lightcoral;" onmouseover = "tabmenu('Juno')" onmouseout = "tabout()" onclick = "buytech(0)">
 					<div class = "techname" id = "Juno Rockets">
 						<img class = "researchimg" src = "ban.png">
 						Juno Rocket
+						<img class = "outcomeimg" src = "outcomeEx.png" style = "visibility: hidden;
+	display: none;">
+						<img class = "outcomeimg" src = "outcomeEx.png" style = "visibility: hidden;
+	display: none;">
+						<img class = "outcomeimg" src = "outcomeEx.png" style = "visibility: hidden;
+	display: none;">
 					</div>
 					<div class = "tab">
 						<img class = "techimage" id = "Juno" src = "TechImages/junorocket.png" style = "display: none">
 					</div>
 				</div>	
-                <div class = "technology" style = "background-color: burlywood;" onmouseover = "tabmenu('Atlas')" onmouseout = "tabout()" onclick = "buy(1)">
+                <div class = "technology" style = "background-color: burlywood;" onmouseover = "tabmenu('Atlas')" onmouseout = "tabout()" onclick = "buytech(1)">
 					<div class = "techname" id = "Atlas Rockets">
 						<img class = "researchimg" src = "ban.png">
 						Atlas Rocket
@@ -24,7 +30,7 @@
 						<img class = "techimage" id = "Atlas" src = "TechImages/atlasrocket.png" style = "display: none">
 					</div>
 				</div>
-				<div class = "technology" style = "background-color: darkolivegreen; color: white;" onmouseover = "tabmenu('Soyuz')" onmouseout = "tabout()" onclick = "buy(2)">
+				<div class = "technology" style = "background-color: darkolivegreen; color: white;" onmouseover = "tabmenu('Soyuz')" onmouseout = "tabout()" onclick = "buytech(2)">
 					<div class = "techname" id = "Soyuz Rockets">
 						<img class = "researchimg" src = "ban.png">
 						Soyuz Rocket
@@ -33,7 +39,7 @@
 						<img class = "techimage" id = "Soyuz" src = "TechImages/soyuzrocket.png" style = "display: none">
 					</div>
 				</div>
-				<div class = "technology" style = "background-color: silver;" onmouseover = "tabmenu('Saturn')" onmouseout = "tabout()" onclick = "buy(3)">
+				<div class = "technology" style = "background-color: silver;" onmouseover = "tabmenu('Saturn')" onmouseout = "tabout()" onclick = "buytech(3)">
 					<div class = "techname" id = "Saturn Rockets">
 						<img class = "researchimg" src = "ban.png">
 						Saturn Rocket
@@ -42,7 +48,7 @@
 						<img class = "techimage" id = "Saturn" src = "TechImages/saturnrocket.png" style = "display: none">
 					</div>
 				</div>
-				<div class = "technology" style = "background-color: skyblue;" onmouseover = "tabmenu('Proton')" onmouseout = "tabout()" onclick = "buy(4)">
+				<div class = "technology" style = "background-color: skyblue;" onmouseover = "tabmenu('Proton')" onmouseout = "tabout()" onclick = "buytech(4)">
 					<div class = "techname" id = "Proton Rockets">
 						<img class = "researchimg" src = "ban.png">
 						Proton Rocket
@@ -51,7 +57,7 @@
 						<img class = "techimage" id = "Proton" src = "TechImages/ProtonRocket.png" style = "display: none">
 					</div>
 				</div>
-				<div class = "technology" style = "background-color: cyan;" onmouseover = "tabmenu('Ionthruster')" onmouseout = "tabout()" onclick = "buy(5)">
+				<div class = "technology" style = "background-color: cyan;" onmouseover = "tabmenu('Ionthruster')" onmouseout = "tabout()" onclick = "buytech(5)">
 					<div class = "techname" id = "Ion Thrusters">
 						<img class = "researchimg" src = "ban.png">
 						Ion Thruster
@@ -60,7 +66,7 @@
 						<img class = "techimage" id = "Ionthruster" src = "TechImages/ionthrusterTech.png" style = "display: none">
 					</div>
 				</div>
-				<div class = "technology" style = "background-color: saddlebrown; color: white;" onmouseover = "tabmenu('Landingimg')" onmouseout = "tabout()" onclick = "buy(6)">
+				<div class = "technology" style = "background-color: saddlebrown; color: white;" onmouseover = "tabmenu('Landingimg')" onmouseout = "tabout()" onclick = "buytech(6)">
 					<div class = "techname" id = "Landing">
 						<img class = "researchimg" src = "ban.png">
 						Landing
@@ -69,7 +75,7 @@
 						<img class = "techimage" id = "Landingimg" src = "TechImages/landing.png" style = "display: none">
 					</div>
 				</div>
-				<div class = "technology" style = "background-color: maroon; color: white;" onmouseover = "tabmenu('Re-entryimg')" onmouseout = "tabout()" onclick = "buy(7)">
+				<div class = "technology" style = "background-color: maroon; color: white;" onmouseover = "tabmenu('Re-entryimg')" onmouseout = "tabout()" onclick = "buytech(7)">
 					<div class = "techname" id = "Re-Entry">
 						<img class = "researchimg" src = "ban.png">
 						Re-Entry
@@ -78,7 +84,7 @@
 						<img class = "techimage" id = "Re-entryimg" src = "TechImages/re-entry.png" style = "display: none">
 					</div>
 				</div>
-				<div class = "technology" style = "background-color: purple;" onmouseover = "tabmenu('Surveyingimg')" onmouseout = "tabout()" onclick = "buy(8)">
+				<div class = "technology" style = "background-color: purple;" onmouseover = "tabmenu('Surveyingimg')" onmouseout = "tabout()" onclick = "buytech(8)">
 					<div class = "techname" id = "Surveying">
 						<img class = "researchimg" src = "ban.png">
 						Surveying
@@ -87,7 +93,7 @@
 						<img class = "techimage" id = "Surveyingimg" src = "TechImages/surveying.png" style = "display: none">
 					</div>
 				</div>
-				<div class = "technology" style = "background-color: darkslateblue;" onmouseover = "tabmenu('Rendezvousimg')" onmouseout = "tabout()" onclick = "buy(9)">
+				<div class = "technology" style = "background-color: darkslateblue;" onmouseover = "tabmenu('Rendezvousimg')" onmouseout = "tabout()" onclick = "buytech(9)">
 					<div class = "techname" id = "Rendezvous">
 						<img class = "researchimg" src = "ban.png">
 						Rendezvous
@@ -96,7 +102,7 @@
 						<img class = "techimage" id = "Rendezvousimg" src = "TechImages/rendezvous.png" style = "display: none">
 					</div>
 				</div>
-				<div class = "technology" style = "background-color: forestgreen;" onmouseover = "tabmenu('Lifesupportimg')" onmouseout = "tabout()" onclick = "buy(10)">
+				<div class = "technology" style = "background-color: forestgreen;" onmouseover = "tabmenu('Lifesupportimg')" onmouseout = "tabout()" onclick = "buytech(10)">
 					<div class = "techname" id = "Life Support">
 						<img class = "researchimg" src = "ban.png">
 						Life Support
@@ -105,7 +111,7 @@
 						<img class = "techimage" id = "Lifesupportimg" src = "TechImages/lifesupport.png" style = "display: none">
 					</div>
 				</div>
-				<div class = "technology" style = "background-color: darkslategray; color: white;" onmouseover = "tabmenu('Aerobreakingimg')" onmouseout = "tabout()" onclick = "buy(11)">
+				<div class = "technology" style = "background-color: darkslategray; color: white;" onmouseover = "tabmenu('Aerobreakingimg')" onmouseout = "tabout()" onclick = "buytech(11)">
 					<div class = "techname" id = "Aerobreaking">
 						<img class = "researchimg" src = "ban.png">
 						Aerobreaking

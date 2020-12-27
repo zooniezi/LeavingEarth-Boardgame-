@@ -71,6 +71,17 @@ var itemindex = [
 "EnceladusSample.png"
 ]
 
+function rocketPage() {
+	
+	var answer = parent.document.getElementsByClassName("tab")[3].contentDocument
+	return answer
+}
+
+function technologyPage() {
+	var answer = parent.document.getElementsByClassName("tab")[4].contentDocument
+	return answer
+}
+
 function noRocketMultiCheck(chk) {
 	
 	var objnum = document.getElementsByName("option")
@@ -98,6 +109,14 @@ function tabmenu(id) {
 
 function buy(item_num, item_price) {
 	update()
+	var techpage = technologyPage()
+	
+	for(var i = 0; i<6; i++){
+		if(techpage.getElementsByClassName("researchimg")[i].name == "" && item_num == i){
+			alert("Develope the prior research first to deal with this Rocket!")
+			return
+		}
+	}
     var dollar = parent.document.getElementById("moneyleft")
 	var money_left = dollar.innerText.substr(1,2) * 1
 	if(document.getElementsByName("option")[0].checked){	//buy 라디오 버튼 체크여부
@@ -113,11 +132,6 @@ function buy(item_num, item_price) {
     temp.innerText = temp.id + " : " + itemarray[item_num]
 }
 
-function rocketPage() {
-	
-	var answer = parent.document.getElementsByClassName("tab")[3].contentDocument
-	return answer
-}
 
 
 function popUpPage(kind) { //태그에 맞는 페이지 불러오기
