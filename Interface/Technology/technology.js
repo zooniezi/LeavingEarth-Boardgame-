@@ -9,17 +9,20 @@ var techindex = ["junorocket.png","atlasrocket.png","soyuzrocket.png","saturnroc
 function update() { // 화면 렌더링 용 함수
 	for(var i =0; i<numtech; i++){	// tech 상태 갱신	
 		if(bought[i]==1){
-		sucleft[i] = success[i][0]+success[i][1]+success[i][2]	//남은 연구카드 최신화
+			sucleft[i] = success[i][0]+success[i][1]+success[i][2]	//남은 연구카드 최신화
+			for(var j = 0; j<(3-sucleft[i]); j++){	//과녁 이미지 개수 갱신
+				document.getElementsByClassName("outcomeimg")[j+(i*3)].style = "display: none; visibility: hidden"
+			}
 		}
 		if(bought[i]==1 && sucleft[i]==0){
 			bought[i] = 2
 		}
 		if(bought[i] == 1){
 			document.getElementsByClassName("researchimg")[i].src = "dev.png"
-			document.getElementsByClassName("researchimg")[i].name = "2"
+			document.getElementsByClassName("researchimg")[i].name = "2"		//기술 구입시 아이콘 변경
 		}
 		if(bought[i] == 2){
-			document.getElementsByClassName("researchimg")[i].src = "star.png"
+			document.getElementsByClassName("researchimg")[i].src = "star.png"	//기술 안정화시 아이콘 변경
 		}
 	}
 	
@@ -33,7 +36,7 @@ function buytech(num) {	//기술 구입하는 함수
 		return
 	}
 	if(document.getElementsByName("option")[0].checked){	//buy 체크박스 체크여부
-		if(num == 4 && bought[3] == 0){
+		if(num == 4 && bought[2] == 0){
 			alert("You need to buy Soyuz Rocket Technology First!")
 			return
 		}
@@ -56,6 +59,7 @@ function buytech(num) {	//기술 구입하는 함수
 				if(rannum == 5){
 					success[num][2] += 1
 				}
+				document.getElementsByClassName("outcomeimg")[i+(num*3)].style = ""
 			}
 		}
 		else{
@@ -92,6 +96,7 @@ function research(tech) {	//연구결과 반영함수 성공 : 0리턴 작은실
 		else if(money_left-10>=0){	//남은 잔고로 제거 가능여부 확인
 			dollar.innerText = "$" + (money_left - 10)
 			success[tech][0] -= 1
+			update()
 			return 0
 		}
 		else{
@@ -105,6 +110,7 @@ function research(tech) {	//연구결과 반영함수 성공 : 0리턴 작은실
 		else if(money_left-5>=0){	//남은 잔고로 제거 가능여부 확인
 			dollar.innerText = "$" + (money_left - 5)
 			success[tech][1] -= 1
+			update()
 			return 1
 		}
 		else{
@@ -118,6 +124,7 @@ function research(tech) {	//연구결과 반영함수 성공 : 0리턴 작은실
 		else if(money_left-5>=0){	//남은 잔고로 제거 가능여부 확인
 			dollar.innerText = "$" + (money_left - 5)
 			success[tech][2] -= 1
+			update()
 			return 2
 		}
 		else{
